@@ -4,15 +4,17 @@ error handling and display
 Add Spinner so user knows when a quote is loading
 get tweet link working
 restyle
+load a quote on page load rather than having to click the button immediately
+see if I can run the AJAX calls side by side so that they aren't slowing things down (do they run this way by default???)
 */
 
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
-import secrets from "./secrets.json";
+import secrets from "./secrets.json"; //don't want to post my API key on github
 
 const TIMEOUT_SEC = 3;
-const QUOTE_ID_PREFIX = "5cd96e05de30eff6ebc";
+const QUOTE_ID_PREFIX = "5cd96e05de30eff6ebc"; //so I can avoid having to work with very large integers
 const QUOTE_LOW = 845801;
 const QUOTE_HIGH = 848192;
 
